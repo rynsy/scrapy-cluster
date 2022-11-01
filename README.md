@@ -1,7 +1,7 @@
 # Scrapy Cluster
 
-[![Build Status](https://circleci.com/gh/istresearch/scrapy-cluster/tree/dev.svg?style=shield)](https://circleci.com/gh/istresearch/scrapy-cluster) [![Documentation](https://readthedocs.org/projects/scrapy-cluster/badge/?version=dev)](http://scrapy-cluster.readthedocs.io/en/dev/) [![Join the chat at https://gitter.im/istresearch/scrapy-cluster](https://badges.gitter.im/istresearch/scrapy-cluster.svg)](https://gitter.im/istresearch/scrapy-cluster?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Coverage Status](https://coveralls.io/repos/github/istresearch/scrapy-cluster/badge.svg?branch=dev)](https://coveralls.io/github/istresearch/scrapy-cluster?branch=dev) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/istresearch/scrapy-cluster/blob/dev/LICENSE) [![Docker Pulls](https://img.shields.io/docker/pulls/istresearch/scrapy-cluster.svg)](https://hub.docker.com/r/istresearch/scrapy-cluster/)
-                 
+[![Build Status](https://travis-ci.org/istresearch/scrapy-cluster.svg?branch=master)](https://travis-ci.org/istresearch/scrapy-cluster) [![Documentation](https://readthedocs.org/projects/scrapy-cluster/badge/?version=latest)](http://scrapy-cluster.readthedocs.io/en/latest/) [![Join the chat at https://gitter.im/istresearch/scrapy-cluster](https://badges.gitter.im/istresearch/scrapy-cluster.svg)](https://gitter.im/istresearch/scrapy-cluster?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Coverage Status](https://coveralls.io/repos/github/istresearch/scrapy-cluster/badge.svg?branch=master)](https://coveralls.io/github/istresearch/scrapy-cluster?branch=master) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/istresearch/scrapy-cluster/blob/master/LICENSE) [![Docker Pulls](https://img.shields.io/docker/pulls/istresearch/scrapy-cluster.svg)](https://hub.docker.com/r/istresearch/scrapy-cluster/)
+
 This Scrapy project uses Redis and Kafka to create a distributed on demand scraping cluster.
 
 The goal is to distribute seed URLs among many waiting spider instances, whose requests are coordinated via Redis. Any other crawls those trigger, as a result of frontier expansion or depth traversal, will also be distributed among all workers in the cluster.
@@ -58,10 +58,10 @@ curl localhost:5343/feed -H "content-type:application/json" -d '{"url": "http://
 ```
 ## Documentation
 
-Please check out the official [Scrapy Cluster documentation](https://scrapy-cluster.readthedocs.io/en/dev/) for more information on how everything works!
+Please check out the official [Scrapy Cluster 1.2.1 documentation](http://scrapy-cluster.readthedocs.org/en/latest/) for more information on how everything works!
 
 ## Branches
 
-The `master` branch of this repository contains the latest stable release code for `Scrapy Cluster 1.2`.
+The `master` branch of this repository contains the latest stable release code for `Scrapy Cluster 1.2.1`.
 
 The `dev` branch contains bleeding edge code and is currently working towards [Scrapy Cluster 1.3](https://github.com/istresearch/scrapy-cluster/milestone/3). Please note that not everything may be documented, finished, tested, or finalized but we are happy to help guide those who are interested.
